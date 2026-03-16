@@ -1,0 +1,117 @@
+/* Fonts */
+@font-face {
+    font-family: 'Cygre';
+    src: url('../fonts/cygre/Cygre-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('../fonts/cygre/Cygre-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('../fonts/cygre/Cygre-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+/* Base & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Cygre', sans-serif;
+    color: #234a9a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Layout Elements */
+header {
+    width: 100%;
+    padding: clamp(1.25rem, 5vw, 3.125rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #234a9a;
+}
+
+.logo img {
+    height: clamp(30px, 4vw, 45px);
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+nav a {
+    text-decoration: none;
+    color: #234a9a;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    text-transform: lowercase;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.center-logo {
+    max-width: 600px;
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Components */
+.project-link {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: #234a9a;
+    text-decoration: none;
+    border-bottom: 3px solid #234a9a;
+    font-weight: 800;
+}
+
+footer {
+    padding: clamp(1rem, 3vw, 2rem) clamp(1.25rem, 5vw, 3.125rem);
+    border-top: 2px solid #234a9a;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-logo img {
+    height: clamp(20px, 3vw, 30px);
+    width: auto;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    nav {
+        gap: 1.5rem;
+    }
+}

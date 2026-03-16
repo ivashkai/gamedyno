@@ -1,0 +1,5 @@
+title: gamedyno
+baseurl: ""
+url: "https://gamedyno.ru"
+
+exclude: [README.md, Gemfile, Gemfile.lock]
