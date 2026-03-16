@@ -1,5 +1,5 @@
 title: gamedyno
 baseurl: ""
-url: "https://gamedyno.ru"
+url: "https://www.gamedyno.ru"
 
 exclude: [README.md, Gemfile, Gemfile.lock]
